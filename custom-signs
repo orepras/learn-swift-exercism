@@ -1,0 +1,29 @@
+// TODO: define the 'birthday' String constant
+let birthday : String = "Birthday"
+
+// TODO: define the 'valentine' String constant
+let valentine : String = "Valentine's Day"
+
+// TODO: define the 'anniversary' String constant
+let anniversary : String = "Anniversary"
+
+// TODO: define the 'space' Character constant
+let space : Character = " "
+
+// TODO: define the 'exclamation' Character constant
+let exclamation : Character = "!"
+
+func buildSign(for occassion: String, name: String) -> String {
+    return "Happy " + occassion + " " + name + "!"
+}
+
+func graduationFor(name: String, year: Int) -> String {
+    return "Congratulations " + name + "!\nClass of " + String(year)
+}
+
+func costOf(sign: String) -> Int {
+    let basePrice = 20
+    let perCharacterCost = 2
+    let totalCharacterCost = sign.count * perCharacterCost
+    return basePrice + totalCharacterCost
+}
